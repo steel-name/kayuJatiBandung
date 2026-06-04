@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JATI BANDUNG | Kiwari — Premium Sundanese Timber & Architectural Wood Solutions</title>
+    <meta name="description" content="Jati Bandung (Kiwari) delivers export-grade West Java teak and premium Parahyangan timber processed with modern precision. Exclusively for global B2B projects.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS with custom configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sundaObsidian: '#0B0E0A', // Deep Forest charcoal black
+                        sundaPine: '#1B201A',     // Carbonized bamboo/pine slate green
+                        sundaBorder: '#2A3027',   // Pine border gray-green
+                        sundaAsh: '#F3F5F2',      // Mist / Sage Ash light gray background
+                        sundaText: '#2B3328',     // Deep Pine text color
+                        sundaMuted: '#859A82',    // Sage gray-green muted text
+                        sundaKencana: '#D4A373',  // Royal Sundanese Teak Gold/Copper accent
+                        sundaKencanaDark: '#B88655', // Hover Gold
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Premium Custom Styles -->
+    <style>
+        /* Custom scrollbar for premium feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0E0A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A3027;
+            border-radius: 4px;
+            border: 2px solid #0B0E0A;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4A373;
+        }
+
+        body {
+            background-color: #F3F5F2;
+            color: #2B3328;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Glassmorphism */
+        .glass-nav {
+            background-color: rgba(11, 14, 10, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 163, 115, 0.15);
+        }
+
+        /* Scroll reveal effects */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Special override for centered reveal elements (e.g. hero specs capsule) */
+        .reveal.reveal-capsule {
+            transform: translate(-50%, 24px);
+        }
+        .reveal.reveal-capsule.active {
+            transform: translate(-50%, 0);
+        }
+
+        /* Hover image effects */
+        .image-container {
+            overflow: hidden;
+            position: relative;
+        }
+        .image-container img {
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .image-container:hover img {
+            transform: scale(1.06);
+        }
+
+        /* Mobile full screen menu styling */
+        #mobile-menu {
+            background-color: rgba(11, 14, 10, 0.98) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        
+        /* Subtle Gold Shimmer Animation */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .shimmer-gold {
+            background: linear-gradient(90deg, rgba(212, 163, 115, 0.1) 25%, rgba(212, 163, 115, 0.3) 50%, rgba(212, 163, 115, 0.1) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 4s infinite linear;
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Premium Loader -->
+    <div id="loader" class="fixed inset-0 bg-sundaObsidian flex flex-col justify-center items-center z-50 transition-all duration-700 ease-out">
+        <div class="text-center">
+            <span class="text-xs tracking-[0.4em] text-sundaKencana uppercase font-light block mb-2">ᮊᮤᮝᮛᮤ — PARAHYANGAN GUILD</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-sundaAsh tracking-[0.2em] font-light">JATI BANDUNG</h2>
+            <div class="mt-8 flex justify-center space-x-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-sundaKencana animate-bounce" style="animation-delay: 0.1s"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-sundaKencana animate-bounce" style="animation-delay: 0.3s"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-sundaKencana animate-bounce" style="animation-delay: 0.5s"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav id="navbar" class="fixed w-full z-40 py-5 px-6 lg:px-16 transition-all duration-500 ease-out border-b border-transparent">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center space-x-3 group">
+                <div class="flex flex-col text-left">
+                    <span class="text-xs tracking-[0.3em] text-sundaKencana font-medium block">ᮊᮤᮝᮛᮤ</span>
+                    <span class="text-xl md:text-2xl font-serif font-light tracking-[0.2em] text-sundaAsh uppercase transition-colors group-hover:text-sundaKencana">JATI BANDUNG</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu (Minimal & Clean) -->
+            <div class="hidden lg:flex items-center space-x-12 text-xs tracking-[0.2em] uppercase font-light text-sundaMuted">
+                <a href="#home" class="hover:text-sundaKencana transition-colors py-2 relative group">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-sundaKencana transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#philosophy" class="hover:text-sundaKencana transition-colors py-2 relative group">
+                    Philosophy
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-sundaKencana transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#catalog" class="hover:text-sundaKencana transition-colors py-2 relative group">
+                    Collection
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-sundaKencana transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#trust" class="hover:text-sundaKencana transition-colors py-2 relative group">
+                    Global Standards
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-sundaKencana transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+
+            <!-- CTA Direct Inquiry Button -->
+            <div class="hidden lg:block">
+                <a href="#inquiry" class="px-6 py-2.5 border border-sundaKencana/40 rounded-sm hover:border-sundaKencana hover:bg-sundaKencana hover:text-sundaObsidian text-xs text-sundaKencana tracking-[0.2em] uppercase transition-all duration-500 font-medium">
+                    Private Inquiry
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-sundaAsh focus:outline-none p-2 -mr-2 z-50 relative flex flex-col justify-center items-center w-11 h-11 bg-sundaPine border border-sundaKencana/40 rounded-full shadow-xl hover:border-sundaKencana transition-all duration-300" aria-label="Toggle Menu">
+                <span id="burger-line-1" class="w-5 h-[1.5px] bg-sundaAsh transition-all duration-300 ease-out my-[2.5px] rounded-full"></span>
+                <span id="burger-line-2" class="w-5 h-[1.5px] bg-sundaAsh transition-all duration-300 ease-out my-[2.5px] rounded-full"></span>
+                <span id="burger-line-3" class="w-5 h-[1.5px] bg-sundaAsh transition-all duration-300 ease-out my-[2.5px] rounded-full"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Fullscreen Menu Dropdown -->
+        <div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-screen z-30 flex flex-col justify-center items-center opacity-0 invisible transition-all duration-500 ease-in-out">
+            <div class="flex flex-col items-center space-y-8 text-center">
+                <!-- Decorative Sundanese character -->
+                <span class="text-4xl text-sundaKencana/20 font-serif">ᮊᮤᮝᮛᮤ</span>
+                
+                <a href="#home" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Home</a>
+                <a href="#philosophy" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Philosophy</a>
+                <a href="#catalog" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Collection</a>
+                <a href="#trust" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Global Standards</a>
+                
+                <div class="pt-8">
+                    <a href="#inquiry" class="mobile-link px-8 py-3.5 border border-sundaKencana/60 text-sundaKencana hover:bg-sundaKencana hover:text-sundaObsidian text-xs tracking-[0.2em] uppercase transition-all rounded-sm font-medium">
+                        Initiate Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <header id="home" class="relative h-screen bg-sundaObsidian flex items-center justify-center overflow-hidden">
+        <!-- Sleek Radial Vignette overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-sundaObsidian via-transparent to-sundaObsidian/80 z-10"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_20%,rgba(11,14,10,0.95)_80%)] z-10"></div>
+        
+        <!-- Large Background Image (Premium architecture with wood) -->
+        <div class="absolute inset-0 opacity-40 transition-opacity duration-1000 ease-out" id="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center; transform: translate3d(0, 0, 0) scale(1.15); will-change: transform;"></div>
+        
+        <!-- Luxury texture overlay -->
+        <div class="absolute inset-0 opacity-[0.03] z-10 bg-[radial-gradient(rgba(255,255,255,0.15)_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+        <!-- Content -->
+        <div class="relative z-20 text-center px-6 max-w-5xl mx-auto flex flex-col items-center pt-20">
+            <!-- Sleek Badge -->
+            <div class="flex items-center space-x-3 mb-6 reveal">
+                <span class="w-8 h-[1px] bg-sundaKencana/50"></span>
+                <span class="text-sundaKencana text-xs md:text-sm tracking-[0.4em] uppercase font-light">B2B Sundanese High-Grade Timber Guild</span>
+                <span class="w-8 h-[1px] bg-sundaKencana/50"></span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-sundaAsh leading-[1.2] tracking-[0.1em] font-light mb-8 reveal" style="transition-delay: 200ms;">
+                Priangan Highlands.<br/>
+                <span class="text-sundaKencana">Kiwari Precision.</span>
+            </h1>
+            
+            <p class="text-sundaMuted text-sm md:text-base lg:text-lg max-w-2xl font-light mb-12 leading-relaxed tracking-wide reveal" style="transition-delay: 400ms;">
+                Premium highland teak from West Java. Harvested sustainably, processed with modern technical tolerances for high-end architecture, luxury resorts, and bespoke global developers.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 reveal" style="transition-delay: 600ms;">
+                <a href="#catalog" class="px-8 py-3.5 bg-sundaKencana text-sundaObsidian text-xs font-semibold tracking-[0.24em] uppercase rounded-sm hover:bg-sundaAsh hover:text-sundaObsidian transition-all duration-500 shadow-md">
+                    Explore Collection
+                </a>
+                <a href="#inquiry" class="px-8 py-3.5 border border-sundaAsh/30 text-sundaAsh text-xs font-medium tracking-[0.24em] uppercase rounded-sm hover:bg-sundaAsh/10 hover:border-sundaKencana transition-all duration-500">
+                    B2B Configurator
+                </a>
+            </div>
+        </div> <!-- End of content container -->
+
+        <!-- Absolute Bottom Coordinates / Specs (Responsive dark glassmorphic capsule) -->
+        <div class="absolute bottom-10 left-1/2 z-20 px-6 py-4 md:py-3.5 bg-sundaObsidian/85 backdrop-blur-md border border-sundaKencana/20 rounded-xl md:rounded-full flex flex-col md:flex-row items-center justify-between gap-3 md:gap-10 text-[9px] md:text-[10px] text-sundaAsh tracking-[0.25em] uppercase w-[90%] md:w-auto shadow-2xl reveal reveal-capsule" style="transition-delay: 800ms;">
+            <div class="flex items-center space-x-2.5">
+                <span class="text-sundaKencana font-medium">Origin:</span>
+                <span class="font-light">Priangan, West Java</span>
+            </div>
+            <span class="hidden md:inline text-sundaKencana/30">|</span>
+            <div class="flex items-center space-x-2.5">
+                <span class="text-sundaKencana font-medium">Forestry:</span>
+                <span class="font-light">Perhutani (SVLK Certified)</span>
+            </div>
+            <span class="hidden md:inline text-sundaKencana/30">|</span>
+            <div class="flex items-center space-x-2.5">
+                <span class="text-sundaKencana font-medium">Tolerances:</span>
+                <span class="font-light">± 0.2mm Precision</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= BRAND PHILOSOPHY SECTION ================= -->
+    <section id="philosophy" class="py-28 lg:py-36 px-6 lg:px-16 bg-sundaAsh relative">
+        <!-- Subtle Sundanese Script Stamp Concept -->
+        <div class="absolute top-20 right-10 lg:right-32 text-sundaObsidian/[0.03] text-[10rem] font-serif select-none pointer-events-none">
+            ᮊᮤᮝᮛᮤ
+        </div>
+
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+                
+                <!-- Image Section with Luxury Frame -->
+                <div class="w-full lg:w-1/2 reveal">
+                    <div class="relative image-container rounded-sm shadow-2xl border border-sundaBorder/10">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop" alt="Premium Sundanese Wood Craftsmanship" class="w-full h-[540px] object-cover" loading="lazy">
+                        <!-- Luxury Dark Charcoal Overlay Border -->
+                        <div class="absolute inset-0 border border-white/10 pointer-events-none"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 border-b-2 border-l-2 border-sundaKencana/30 -z-10"></div>
+                    </div>
+                </div>
+                
+                <!-- Brand Narrative -->
+                <div class="w-full lg:w-1/2 reveal" style="transition-delay: 200ms;">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-sundaKencana font-serif text-lg">ᮊᮤᮝᮛᮤ</span>
+                        <span class="w-8 h-[1px] bg-sundaKencana/60"></span>
+                        <span class="text-xs text-sundaMuted tracking-[0.25em] uppercase font-light">Heritage & Vision</span>
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-4xl font-serif text-sundaObsidian leading-[1.3] font-light mb-8">
+                        The Ethos of <span class="text-sundaKencana">KIWARI</span>
+                    </h2>
+                    
+                    <p class="text-sundaText/80 leading-relaxed font-light text-sm md:text-base mb-6">
+                        Di tanah Parahyangan, relasi antara manusia, alam, dan kayu adalah keselarasan yang sakral. Kayu jati Bandung kami tumbuh matang perlahan di dataran tinggi Sunda, menyerap kekayaan mineral vulkanik untuk membentuk serat yang luar biasa rapat dan minyak alami pelindung.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 border-t border-b border-zinc-200 py-8">
+                        <div>
+                            <h4 class="text-sundaKencana font-serif text-lg mb-2">RANCAGE <span class="text-xs text-sundaMuted block tracking-wider uppercase font-light">ᮛᮔ᮪ᮎᮌᮦ — Artisan Ingenuity</span></h4>
+                            <p class="text-xs text-zinc-600 font-light leading-relaxed">
+                                Representasi dari keuletan, kecerdasan praktis, dan kehalusan rasa para pengrajin kayu tradisional Sunda dalam mengolah material alami menjadi karya bernilai estetika tinggi.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-sundaKencana font-serif text-lg mb-2">KIWARI <span class="text-xs text-sundaMuted block tracking-wider uppercase font-light">ᮊᮤᮝᮛᮤ — Modern Precision</span></h4>
+                            <p class="text-xs text-zinc-600 font-light leading-relaxed">
+                                Berarti masa kini. Ini adalah manifestasi kami dalam membawa warisan filosofi kayu Sunda ke era modern melalui standardisasi ketelitian mikron dan komitmen B2B global.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sundaText/70 leading-relaxed font-light text-sm">
+                        Kami menghadirkan kayu jati bermutu tinggi dengan sentuhan kemewahan minimalis. **JATI BANDUNG (Kiwari)** adalah dedikasi terhadap struktur yang abadi, keindahan serat organik murni, dan keanggunan budaya Parahyangan yang luhur.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRODUCTS / CATALOG SECTION ================= -->
+    <section id="catalog" class="py-28 lg:py-36 px-6 lg:px-16 bg-sundaObsidian text-sundaAsh relative border-t border-sundaKencana/10">
+        <!-- Abstract grid pattern -->
+        <div class="absolute inset-0 opacity-[0.01] pointer-events-none bg-[linear-gradient(to_right,#D4A373_1px,transparent_1px),linear-gradient(to_bottom,#D4A373_1px,transparent_1px)] [background-size:80px_80px]"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- Section Header -->
+            <div class="flex flex-col items-center text-center mb-20 reveal">
+                <span class="text-sundaKencana text-xs tracking-[0.4em] uppercase font-light block mb-3">CURATED SELECTION</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-light tracking-[0.1em]">Parahyangan Material Catalog</h2>
+                <div class="w-16 h-[1px] bg-sundaKencana/60 mt-6"></div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product 1 -->
+                <div class="group bg-sundaPine border border-sundaBorder rounded-sm overflow-hidden reveal hover:border-sundaKencana/40 transition-all duration-500 flex flex-col justify-between">
+                    <div>
+                        <div class="image-container h-72 border-b border-sundaBorder">
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800" alt="Premium Teak Planks" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-sundaObsidian/90 border border-sundaKencana/30 text-sundaKencana text-[10px] tracking-widest uppercase font-light">Grade A prime</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-serif text-sundaAsh mb-3 group-hover:text-sundaKencana transition-colors">Priangan Boards (Papan Jati)</h3>
+                            <p class="text-xs text-sundaMuted tracking-widest mb-4">4000mm × 150mm × 25mm • KD < 10%</p>
+                            <p class="text-sundaMuted/70 text-xs font-light leading-relaxed mb-6">Papan kayu jati pilihan asal dataran tinggi Priangan yang dikeringkan dengan metode Kiln-Dry tingkat kelembaban di bawah 10%. Memiliki kestabilan struktural yang tinggi untuk lantai dan cladding kapal.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <div class="flex justify-between items-center text-xs border-t border-sundaBorder pt-4">
+                            <span class="text-sundaKencana/80 font-light">Durability: Class I</span>
+                            <a href="#inquiry" onclick="prefillWood('Priangan Boards (Papan Jati)', '4000x150x25mm')" class="text-sundaMuted hover:text-sundaKencana transition-colors flex items-center space-x-1 uppercase tracking-wider text-[10px]">
+                                <span>Request Specs</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group bg-sundaPine border border-sundaBorder rounded-sm overflow-hidden reveal hover:border-sundaKencana/40 transition-all duration-500 flex flex-col justify-between" style="transition-delay: 150ms;">
+                    <div>
+                        <div class="image-container h-72 border-b border-sundaBorder">
+                            <img src="https://images.unsplash.com/photo-1590216194451-c032ec845a7c?q=80&w=800" alt="Structural Teak Beams" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-sundaObsidian/90 border border-sundaKencana/30 text-sundaKencana text-[10px] tracking-widest uppercase font-light">Structural Grade</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-serif text-sundaAsh mb-3 group-hover:text-sundaKencana transition-colors">Sokoguru Beams (Balok Utama)</h3>
+                            <p class="text-xs text-sundaMuted tracking-widest mb-4">Bespoke Custom Size • Heartwood > 95%</p>
+                            <p class="text-sundaMuted/70 text-xs font-light leading-relaxed mb-6">Balok kayu jati kokoh yang terinspirasi dari pilar soko guru bangunan adat. Dibuat dengan porsi teras kayu (heartwood) melebihi 95% untuk pilar utama hunian mewah yang megah.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <div class="flex justify-between items-center text-xs border-t border-sundaBorder pt-4">
+                            <span class="text-sundaKencana/80 font-light">Strength: Class I-II</span>
+                            <a href="#inquiry" onclick="prefillWood('Sokoguru Beams (Balok Utama)', 'Custom Dimensions')" class="text-sundaMuted hover:text-sundaKencana transition-colors flex items-center space-x-1 uppercase tracking-wider text-[10px]">
+                                <span>Request Specs</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group bg-sundaPine border border-sundaBorder rounded-sm overflow-hidden reveal hover:border-sundaKencana/40 transition-all duration-500 flex flex-col justify-between" style="transition-delay: 300ms;">
+                    <div>
+                        <div class="image-container h-72 border-b border-sundaBorder">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800" alt="Outdoor Decking Teak" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-sundaObsidian/90 border border-sundaKencana/30 text-sundaKencana text-[10px] tracking-widest uppercase font-light">All-Weather</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-serif text-sundaAsh mb-3 group-hover:text-sundaKencana transition-colors">Highland Decking (Lantai Outdoor)</h3>
+                            <p class="text-xs text-sundaMuted tracking-widest mb-4">3000mm × 90mm × 19mm • E4E / S4S</p>
+                            <p class="text-sundaMuted/70 text-xs font-light leading-relaxed mb-6">Lantai outdoor jati dengan ketahanan luar biasa terhadap perubahan cuaca pegunungan basah dan panas ekstrem. Diproses halus dengan tepi radius yang aman saat dipijak.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <div class="flex justify-between items-center text-xs border-t border-sundaBorder pt-4">
+                            <span class="text-sundaKencana/80 font-light">Profile: Anti-Slip Radius</span>
+                            <a href="#inquiry" onclick="prefillWood('Highland Decking (Lantai Outdoor)', '3000x90x19mm')" class="text-sundaMuted hover:text-sundaKencana transition-colors flex items-center space-x-1 uppercase tracking-wider text-[10px]">
+                                <span>Request Specs</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group bg-sundaPine border border-sundaBorder rounded-sm overflow-hidden reveal hover:border-sundaKencana/40 transition-all duration-500 flex flex-col justify-between">
+                    <div>
+                        <div class="image-container h-72 border-b border-sundaBorder">
+                            <img src="https://images.unsplash.com/photo-1603533867307-b354255e3c32?q=80&w=800" alt="Premium Teak Joints" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-sundaObsidian/90 border border-sundaKencana/30 text-sundaKencana text-[10px] tracking-widest uppercase font-light">Interior Flawless</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-serif text-sundaAsh mb-3 group-hover:text-sundaKencana transition-colors">Fine Finish Planks (Papan Belahan)</h3>
+                            <p class="text-xs text-sundaMuted tracking-widest mb-4">S4S Smooth Fin. • Radial Cut Option</p>
+                            <p class="text-sundaMuted/70 text-xs font-light leading-relaxed mb-6">Papan terserut halus 4 sisi tanpa cacat untuk kebutuhan panel dinding interior mewah, mebel premium, atau kabinet berkelas. Menampilkan keindahan serat alami jati Sunda secara optimal.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <div class="flex justify-between items-center text-xs border-t border-sundaBorder pt-4">
+                            <span class="text-sundaKencana/80 font-light">Tolerance: ±0.2mm</span>
+                            <a href="#inquiry" onclick="prefillWood('Fine Finish Planks (Papan Belahan)', 'Custom Profiles')" class="text-sundaMuted hover:text-sundaKencana transition-colors flex items-center space-x-1 uppercase tracking-wider text-[10px]">
+                                <span>Request Specs</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="group bg-sundaPine border border-sundaBorder rounded-sm overflow-hidden reveal hover:border-sundaKencana/40 transition-all duration-500 flex flex-col justify-between" style="transition-delay: 150ms;">
+                    <div>
+                        <div class="image-container h-72 border-b border-sundaBorder">
+                            <img src="https://images.unsplash.com/photo-1610557892470-76d34ac676fa?q=80&w=800" alt="Yakisugi / Shou Sugi Ban Wood" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-sundaObsidian/90 border border-sundaKencana/30 text-sundaKencana text-[10px] tracking-widest uppercase font-light">Carbonized Luxury</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-serif text-sundaAsh mb-3 group-hover:text-sundaKencana transition-colors">Scorched Teak (Jati Sakal)</h3>
+                            <p class="text-xs text-sundaMuted tracking-widest mb-4">Burnt Finish • Premium Weather Resistance</p>
+                            <p class="text-sundaMuted/70 text-xs font-light leading-relaxed mb-6">Kayu jati eksklusif dengan pembakaran arang terkontrol (terinspirasi dari teknik ketahanan bambu Sunda kuno). Menciptakan tekstur abu-hitam elegan dan proteksi maksimal terhadap rayap.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <div class="flex justify-between items-center text-xs border-t border-sundaBorder pt-4">
+                            <span class="text-sundaKencana/80 font-light">Finish: Silicate Sealed</span>
+                            <a href="#inquiry" onclick="prefillWood('Scorched Teak (Jati Sakal)', 'Standard 2400x120x15mm')" class="text-sundaMuted hover:text-sundaKencana transition-colors flex items-center space-x-1 uppercase tracking-wider text-[10px]">
+                                <span>Request Specs</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="group bg-sundaPine border border-sundaBorder rounded-sm overflow-hidden reveal hover:border-sundaKencana/40 transition-all duration-500 flex flex-col justify-between" style="transition-delay: 300ms;">
+                    <div>
+                        <div class="image-container h-72 border-b border-sundaBorder">
+                            <img src="https://images.unsplash.com/photo-1590216259779-16c80534c0e6?q=80&w=800" alt="Custom Timber Milling" class="w-full h-full object-cover" loading="lazy">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-sundaObsidian/90 border border-sundaKencana/30 text-sundaKencana text-[10px] tracking-widest uppercase font-light">Bespoke Millwork</span>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-serif text-sundaAsh mb-3 group-hover:text-sundaKencana transition-colors">Bespoke Parahyangan (Kustom)</h3>
+                            <p class="text-xs text-sundaMuted tracking-widest mb-4">Tailored Cut • Specialized Tolerances</p>
+                            <p class="text-sundaMuted/70 text-xs font-light leading-relaxed mb-6">Pemesanan kustom ukuran dan profil potongan kayu pilar tradisional Sunda (seperti bentuk pasak dan siku) yang disesuaikan dengan gambar CAD / Blueprint proyek arsitektur Anda.</p>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <div class="flex justify-between items-center text-xs border-t border-sundaBorder pt-4">
+                            <span class="text-sundaKencana/80 font-light">Standard: JIS / DIN Compliant</span>
+                            <a href="#inquiry" onclick="prefillWood('Bespoke Parahyangan (Kustom)', 'As per blueprints')" class="text-sundaMuted hover:text-sundaKencana transition-colors flex items-center space-x-1 uppercase tracking-wider text-[10px]">
+                                <span>Request Specs</span>
+                                <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TRUST & GLOBAL STANDARDS SECTION ================= -->
+    <section id="trust" class="py-28 px-6 lg:px-16 bg-sundaAsh border-b border-zinc-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                
+                <!-- Left: Trust Marks & Description -->
+                <div class="reveal">
+                    <span class="text-sundaKencana text-xs tracking-[0.4em] uppercase font-light block mb-3">GLOBAL VALIDITY</span>
+                    <h2 class="text-3xl md:text-4xl font-serif text-sundaObsidian leading-[1.3] font-light mb-6">
+                        Tested Legality.<br>Ethical Priangan Forestry.
+                    </h2>
+                    <p class="text-sundaText/80 text-sm md:text-base leading-relaxed font-light mb-10">
+                        Setiap kayu jati Bandung yang kami pasok dipastikan berasal dari hutan perhutani yang legal dan ramah lingkungan. Kami menjamin pemenuhan regulasi perdagangan kayu internasional untuk mempermudah distribusi ke pasar Uni Eropa, Amerika Serikat, dan Asia Pasifik.
+                    </p>
+
+                    <!-- Trust Cards -->
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-white border border-zinc-200 rounded-sm mt-1">
+                                <!-- SVLK Certified Icon (Simplified SVG) -->
+                                <svg class="w-6 h-6 text-sundaKencana" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold tracking-wider uppercase text-sundaObsidian">SVLK / V-Legal Certified</h4>
+                                <p class="text-xs text-zinc-500 font-light leading-relaxed mt-1">Sertifikasi kelayakan hukum kayu resmi Republik Indonesia yang setara dengan lisensi FLEGT Uni Eropa.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-white border border-zinc-200 rounded-sm mt-1">
+                                <!-- Logistics Icon -->
+                                <svg class="w-6 h-6 text-sundaKencana" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold tracking-wider uppercase text-sundaObsidian">Global Logistics Clearance</h4>
+                                <p class="text-xs text-zinc-500 font-light leading-relaxed mt-1">Dokumen lengkap (Phytosanitary, Certificate of Origin) untuk kelancaran bea cukai di pelabuhan global tujuan Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Active B2B Shipments map list -->
+                <div class="bg-white border border-zinc-200 p-8 md:p-12 rounded-sm shadow-xl reveal" style="transition-delay: 200ms;">
+                    <div class="flex items-center justify-between mb-8 pb-4 border-b border-zinc-100">
+                        <span class="text-xs tracking-wider uppercase font-semibold text-sundaObsidian">Shipment Hubs</span>
+                        <span class="text-sundaKencana font-serif text-xs">ᮊᮤᮝᮛᮤ</span>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Port 1 -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-sundaKencana"></span>
+                                <span class="text-sm font-medium text-sundaObsidian">Tanjung Priok, ID (Jakarta)</span>
+                            </div>
+                            <span class="text-xs text-zinc-400 font-light uppercase tracking-wider">Primary Port</span>
+                        </div>
+                        
+                        <!-- Port 2 -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-sundaKencana"></span>
+                                <span class="text-sm font-medium text-sundaObsidian">Tokyo Port, JP</span>
+                            </div>
+                            <span class="text-xs text-zinc-400 font-light uppercase tracking-wider">East Asia Transit</span>
+                        </div>
+
+                        <!-- Port 3 -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-sundaKencana"></span>
+                                <span class="text-sm font-medium text-sundaObsidian">Hamburg, DE</span>
+                            </div>
+                            <span class="text-xs text-zinc-400 font-light uppercase tracking-wider">Europe Hub</span>
+                        </div>
+
+                        <!-- Port 4 -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-sundaKencana"></span>
+                                <span class="text-sm font-medium text-sundaObsidian">Dubai Port, UAE</span>
+                            </div>
+                            <span class="text-xs text-zinc-400 font-light uppercase tracking-wider">Middle East Gateway</span>
+                        </div>
+
+                        <!-- Port 5 -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-3">
+                                <span class="w-1.5 h-1.5 rounded-full bg-sundaKencana"></span>
+                                <span class="text-sm font-medium text-sundaObsidian">Singapore Hub</span>
+                            </div>
+                            <span class="text-xs text-zinc-400 font-light uppercase tracking-wider">ASEAN Hub</span>
+                        </div>
+                    </div>
+
+                    <!-- Short B2B Note -->
+                    <div class="mt-8 pt-6 border-t border-zinc-100 text-center">
+                        <p class="text-[11px] text-zinc-400 leading-relaxed font-light">
+                            *Minimum Order Quantity (MOQ) diberlakukan demi efisiensi kontainer laut (FCL). Silakan ajukan detail kuantitas pada panel konfigurator inquiry privat di bawah.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= B2B INQUIRY CONFIGURATOR ================= -->
+    <section id="inquiry" class="py-28 lg:py-36 px-6 lg:px-16 bg-sundaObsidian text-sundaAsh relative">
+        <!-- Abstract glowing gold radial accent behind form -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-sundaKencana/[0.03] blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <!-- Header -->
+            <div class="text-center mb-16 reveal">
+                <span class="text-sundaKencana text-xs tracking-[0.4em] uppercase font-light block mb-3">SECURE DIRECT CHANNEL</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-light tracking-[0.1em] text-sundaAsh">B2B Private Message Configurator</h2>
+                <div class="w-16 h-[1px] bg-sundaKencana/60 mt-6 mx-auto"></div>
+                <p class="text-xs text-sundaMuted font-light max-w-xl mx-auto mt-6 leading-relaxed">
+                    Kami menghargai spesifikasi dan privasi proyek B2B Anda. Gunakan panel configurator ini untuk merangkum detail kebutuhan material kayu jati Bandung pilihan Anda, lalu kirimkan draf melalui WhatsApp atau Email ke perwakilan kami.
+                </p>
+            </div>
+
+            <!-- Interactive Configurator Form -->
+            <div class="bg-sundaPine border border-sundaBorder p-8 md:p-12 rounded-sm shadow-2xl reveal">
+                
+                <form id="inquiryForm" onsubmit="generatePrivateMessage(event)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- Client Identification -->
+                        <div>
+                            <label class="block text-[10px] tracking-[0.2em] uppercase font-medium text-sundaKencana mb-2">Nama Lengkap / Perusahaan</label>
+                            <input type="text" id="clientName" required placeholder="Contoh: Bpk. Kurniawan / PT Pasundan Developer" 
+                                class="w-full bg-sundaObsidian border border-sundaBorder text-sundaAsh rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-sundaKencana transition-colors placeholder-zinc-800">
+                        </div>
+
+                        <!-- Timber Material Selection -->
+                        <div>
+                            <label class="block text-[10px] tracking-[0.2em] uppercase font-medium text-sundaKencana mb-2">Pilihan Material Kayu</label>
+                            <select id="timberType" onchange="updateWoodGuide()" class="w-full bg-sundaObsidian border border-sundaBorder text-sundaAsh rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-sundaKencana transition-colors">
+                                <option value="Priangan Boards (Papan Jati)">Priangan Boards (Papan Jati) — Papan Jati KD</option>
+                                <option value="Sokoguru Beams (Balok Utama)">Sokoguru Beams (Balok Utama) — Balok Teras Utama</option>
+                                <option value="Highland Decking (Lantai Outdoor)">Highland Decking (Lantai Outdoor) — Lantai Outdoor Radius</option>
+                                <option value="Fine Finish Planks (Papan Belahan)">Fine Finish Planks (Papan Belahan) — Papan Finishing S4S</option>
+                                <option value="Scorched Teak (Jati Sakal)">Scorched Teak (Jati Sakal) — Jati Karbonisasi Abu-Hitam</option>
+                                <option value="Bespoke Parahyangan (Kustom)">Bespoke Parahyangan (Kustom) — Sesuai Blueprint Projek</option>
+                            </select>
+                        </div>
+
+                        <!-- Dimensions / Specs Guide (Interactive Output) -->
+                        <div class="md:col-span-2 bg-sundaObsidian border border-sundaBorder p-4 rounded-sm">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-[10px] tracking-widest uppercase font-medium text-sundaMuted">Rekomendasi Dimensi Standar:</span>
+                                <span id="guideTag" class="text-[10px] tracking-wider text-sundaKencana font-serif">KD < 10% moisture</span>
+                            </div>
+                            <p id="guideText" class="text-xs text-zinc-500 font-light leading-relaxed">
+                                Papan jati kering oven (Kiln Dried) berkualitas tinggi. Rekomendasi dimensi: 4000mm x 150mm x 25mm. Toleransi ukuran ketat ±0.2mm.
+                            </p>
+                        </div>
+
+                        <!-- Dimension Input -->
+                        <div>
+                            <label class="block text-[10px] tracking-[0.2em] uppercase font-medium text-sundaKencana mb-2">Spesifikasi Ukuran Kustom (P x L x T mm)</label>
+                            <input type="text" id="woodDimensions" required placeholder="Contoh: 4000 x 150 x 25 mm" 
+                                class="w-full bg-sundaObsidian border border-sundaBorder text-sundaAsh rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-sundaKencana transition-colors placeholder-zinc-800">
+                        </div>
+
+                        <!-- Estimated Volume / Quantity -->
+                        <div>
+                            <label class="block text-[10px] tracking-[0.2em] uppercase font-medium text-sundaKencana mb-2">Estimasi Jumlah Kebutuhan</label>
+                            <input type="text" id="woodVolume" required placeholder="Contoh: 30 M3 (Kubik) / 500 Pcs" 
+                                class="w-full bg-sundaObsidian border border-sundaBorder text-sundaAsh rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-sundaKencana transition-colors placeholder-zinc-800">
+                        </div>
+
+                        <!-- Destination Port / Country -->
+                        <div>
+                            <label class="block text-[10px] tracking-[0.2em] uppercase font-medium text-sundaKencana mb-2">Pelabuhan / Negara Tujuan Kirim</label>
+                            <input type="text" id="destination" required placeholder="Contoh: Tokyo Port, Jepang / Hamburg, Jerman" 
+                                class="w-full bg-sundaObsidian border border-sundaBorder text-sundaAsh rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-sundaKencana transition-colors placeholder-zinc-800">
+                        </div>
+
+                        <!-- Grade & Technical Needs -->
+                        <div>
+                            <label class="block text-[10px] tracking-[0.2em] uppercase font-medium text-sundaKencana mb-2">Kelas Kualitas & Regulasi</label>
+                            <select id="woodGrade" class="w-full bg-sundaObsidian border border-sundaBorder text-sundaAsh rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-sundaKencana transition-colors">
+                                <option value="Grade A Prime (FSC/SVLK)">Grade A Prime (Kandungan Teras Jati > 95%)</option>
+                                <option value="Standard B2B Grade">Standard Export Grade (SVLK Certified)</option>
+                                <option value="Custom Spec (Requires Blueprint)">Kualitas Kustom (Butuh Diskusi Lanjutan)</option>
+                            </select>
+                        </div>
+
+                        <!-- Additional Description / Special Requirements -->
+                        <div class="md:col-span-2">
+                            <label class="block text-[10px] tracking-[0.2em] uppercase font-medium text-sundaKencana mb-2">Catatan Proyek / Detail Kebutuhan Khusus</label>
+                            <textarea id="clientNotes" rows="3" placeholder="Tulis catatan proyek, waktu pengiriman target, atau toleransi milimeter yang diperlukan..." 
+                                class="w-full bg-sundaObsidian border border-sundaBorder text-sundaAsh rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-sundaKencana transition-colors placeholder-zinc-800"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Dynamically Formatted Text Preview Block -->
+                    <div class="mt-8 p-6 bg-sundaObsidian border border-sundaBorder rounded-sm shimmer-gold relative">
+                        <div class="absolute top-2 right-4 text-[9px] text-sundaKencana font-mono uppercase tracking-widest font-bold">Secure Packaged Data</div>
+                        <h5 class="text-[10px] tracking-widest uppercase font-semibold text-sundaKencana mb-3">Structured Message Preview:</h5>
+                        <div class="bg-black/40 p-4 border border-sundaBorder rounded-sm text-xs font-mono text-zinc-300 leading-relaxed whitespace-pre-wrap select-all" id="formattedPreview">
+Harap lengkapi formulir di atas untuk mengompilasi draf pesan inquiry privat...
+                        </div>
+                    </div>
+
+                    <!-- Direct Two-Way PM Channels buttons -->
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-between items-center">
+                        <div class="text-left text-xs text-sundaMuted font-light leading-tight">
+                            <span class="text-sundaKencana font-medium">Jalur Komunikasi Aman Terenkripsi:</span><br>
+                            Pesan Anda dienkripsi secara privat di WhatsApp/Email pribadi Anda.
+                        </div>
+                        
+                        <div class="flex flex-wrap gap-4 w-full sm:w-auto">
+                            <!-- WhatsApp PM -->
+                            <button type="submit" onclick="submitToChannel('whatsapp')" class="flex-1 sm:flex-initial flex items-center justify-center space-x-2 px-6 py-3.5 bg-[#25D366] hover:bg-[#1ebd59] text-white text-xs font-medium tracking-wider uppercase rounded-sm transition-all duration-300 shadow-md">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>WhatsApp PM</span>
+                            </button>
+
+                            <!-- Email PM -->
+                            <button type="submit" onclick="submitToChannel('email')" class="flex-1 sm:flex-initial flex items-center justify-center space-x-2 px-6 py-3.5 bg-sundaKencana hover:bg-sundaKencanaDark text-sundaObsidian text-xs font-semibold tracking-wider uppercase rounded-sm transition-all duration-300 shadow-md">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <span>Email inquiry</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-sundaObsidian text-sundaMuted/80 py-20 px-6 lg:px-16 border-t border-sundaBorder">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Branding column -->
+                <div class="md:col-span-1">
+                    <span class="text-xs tracking-[0.3em] text-sundaKencana font-medium block mb-1">ᮊᮤᮝᮛᮤ</span>
+                    <h3 class="text-2xl font-serif font-light text-sundaAsh tracking-[0.2em] uppercase mb-6">JATI BANDUNG</h3>
+                    <p class="text-xs text-sundaMuted/60 leading-relaxed font-light mb-6">
+                        Penyedia kayu jati berkualitas tinggi dari dataran tinggi Bandung, diproses secara teliti untuk standar arsitektur premium kontemporer.
+                    </p>
+                    <div class="flex space-x-3 text-[10px] text-sundaKencana font-mono tracking-widest uppercase">
+                        <span>EST. 2026</span>
+                        <span>•</span>
+                        <span>Global B2B Supply</span>
+                    </div>
+                </div>
+                
+                <!-- Quick Menu Links -->
+                <div>
+                    <h4 class="text-sundaAsh text-xs tracking-[0.25em] uppercase font-semibold mb-6">Navigation</h4>
+                    <ul class="space-y-3.5 text-xs font-light">
+                        <li><a href="#home" class="hover:text-sundaKencana transition-colors">Home</a></li>
+                        <li><a href="#philosophy" class="hover:text-sundaKencana transition-colors">Why Kiwari</a></li>
+                        <li><a href="#catalog" class="hover:text-sundaKencana transition-colors">Wood Catalog</a></li>
+                        <li><a href="#trust" class="hover:text-sundaKencana transition-colors">Global Regulations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Direct B2B Contact Info -->
+                <div>
+                    <h4 class="text-sundaAsh text-xs tracking-[0.25em] uppercase font-semibold mb-6">Two-Way Channels</h4>
+                    <ul class="space-y-3.5 text-xs font-light text-sundaMuted/80">
+                        <li>
+                            <span class="block text-[10px] uppercase text-zinc-600 tracking-wider">Secured PM WhatsApp:</span>
+                            <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-sundaKencana transition-colors">+62 812-3456-7890</a>
+                        </li>
+                        <li>
+                            <span class="block text-[10px] uppercase text-zinc-600 tracking-wider">Direct RFQ Email:</span>
+                            <a href="mailto:consultation@jatibandung.com" class="hover:text-sundaKencana transition-colors">consultation@jatibandung.com</a>
+                        </li>
+                        <li>
+                            <span class="block text-[10px] uppercase text-zinc-600 tracking-wider">Representative HQ:</span>
+                            <span class="text-zinc-500">Kawasan Industri Lembang, Bandung, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Technical Assurances -->
+                <div>
+                    <h4 class="text-sundaAsh text-xs tracking-[0.25em] uppercase font-semibold mb-6">Standards Complied</h4>
+                    <ul class="space-y-3 text-xs font-light text-sundaMuted/60">
+                        <li>• FLEGT / SVLK Legality Audit</li>
+                        <li>• Kiln-Dried Moisture Verification</li>
+                        <li>• Radial Grain Alignment Audit</li>
+                        <li>• JIS-1402 (Japan Standard) Tolerance</li>
+                        <li>• Custom Sea Freight Insurance</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Copyright / Signature -->
+            <div class="border-t border-sundaBorder pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-sundaMuted/40 uppercase tracking-widest">
+                <p>&copy; 2026 JATI BANDUNG (Kiwari). All rights reserved.</p>
+                <p class="flex items-center space-x-2">
+                    <span>Designed for Precision & Natural Luxury</span>
+                    <span class="text-sundaKencana font-serif">ᮊᮤᮝᮛᮤ</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING CONTACT INTERACTIVE BUTTON ================= -->
+    <a href="#inquiry" class="fixed bottom-6 right-6 z-30 bg-sundaObsidian hover:bg-sundaPine text-sundaKencana p-3.5 rounded-full border border-sundaKencana/30 shadow-2xl hover:border-sundaKencana transition-all duration-300 flex items-center justify-center" aria-label="Configure Inquiry">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+        </svg>
+    </a>
+
+    <!-- ================= JAVASCRIPT LOGIC ================= -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Loader removal
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+            }, 1000);
+
+            // 2. Navbar glassmorphism scroll logic (run on scroll and load)
+            const navbar = document.getElementById('navbar');
+            const checkNavbarScroll = () => {
+                if (window.scrollY > 40) {
+                    navbar.classList.add('glass-nav');
+                    navbar.classList.remove('py-5');
+                    navbar.classList.add('py-3.5');
+                } else {
+                    navbar.classList.remove('glass-nav');
+                    navbar.classList.remove('py-3.5');
+                    navbar.classList.add('py-5');
+                }
+            };
+            window.addEventListener('scroll', checkNavbarScroll);
+            checkNavbarScroll(); // Run immediately on load
+
+            // 3. Mobile Menu Toggle Logic (with body scroll lock)
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('opacity-0');
+                const line1 = document.getElementById('burger-line-1');
+                const line2 = document.getElementById('burger-line-2');
+                const line3 = document.getElementById('burger-line-3');
+
+                if (isOpen) {
+                    // Close menu
+                    mobileMenu.classList.add('opacity-0', 'invisible');
+                    mobileMenu.classList.remove('opacity-100', 'visible');
+                    document.body.classList.remove('overflow-hidden');
+                    
+                    // Reset Burger Icon
+                    line1.style.transform = 'none';
+                    line2.style.transform = 'none';
+                    line2.style.opacity = '1';
+                    line3.style.transform = 'none';
+                } else {
+                    // Open menu
+                    mobileMenu.classList.remove('opacity-0', 'invisible');
+                    mobileMenu.classList.add('opacity-100', 'visible');
+                    document.body.classList.add('overflow-hidden');
+                    
+                    // Animate to 'X'
+                    line1.style.transform = 'translateY(7.5px) rotate(45deg)';
+                    line2.style.transform = 'scale(0)';
+                    line2.style.opacity = '0';
+                    line3.style.transform = 'translateY(-7.5px) rotate(-45deg)';
+                }
+            });
+
+            // Close mobile menu on click link
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('opacity-0', 'invisible');
+                    mobileMenu.classList.remove('opacity-100', 'visible');
+                    document.body.classList.remove('overflow-hidden');
+                    
+                    // Reset Burger Icon
+                    const line1 = document.getElementById('burger-line-1');
+                    const line2 = document.getElementById('burger-line-2');
+                    const line3 = document.getElementById('burger-line-3');
+                    line1.style.transform = 'none';
+                    line2.style.transform = 'none';
+                    line2.style.opacity = '1';
+                    line3.style.transform = 'none';
+                });
+            });
+
+            // 4. Scroll Reveal trigger
+            const reveals = document.querySelectorAll('.reveal');
+            const checkReveal = () => {
+                const triggerBottom = window.innerHeight * 0.85;
+                reveals.forEach(reveal => {
+                    const revealTop = reveal.getBoundingClientRect().top;
+                    if (revealTop < triggerBottom) {
+                        reveal.classList.add('active');
+                    }
+                });
+            };
+            window.addEventListener('scroll', checkReveal);
+            setTimeout(checkReveal, 1200); // Trigger after load completes
+
+            // 5. Parallax Hero logic
+            const heroBg = document.getElementById('hero-bg');
+            let scrollTicking = false;
+
+            window.addEventListener('scroll', () => {
+                if (!scrollTicking) {
+                    window.requestAnimationFrame(() => {
+                        const scrollPos = window.scrollY;
+                        if (scrollPos < window.innerHeight) {
+                            heroBg.style.transform = `translate3d(0, -${scrollPos * 0.12}px, 0) scale(1.15)`;
+                        }
+                        scrollTicking = false;
+                    });
+                    scrollTicking = true;
+                }
+            }, { passive: true });
+
+            // 6. Configurator guide updates
+            updateWoodGuide(); 
+            setupLivePreviewUpdater();
+        });
+
+        // Interactive Specs Guidelines
+        const woodGuides = {
+            "Priangan Boards (Papan Jati)": {
+                tag: "KD < 10% Moisture • Prime grade",
+                text: "Papan jati Lembang berkualitas ekspor, disarankan ukuran standar: 4000mm x 150mm x 25mm. Pilihan terbaik untuk decking kolam & outdoor jati mewah.",
+                defaultDim: "4000 x 150 x 25 mm",
+                defaultQty: "35 M3 (Cubic Meters)"
+            },
+            "Sokoguru Beams (Balok Utama)": {
+                tag: "Heartwood > 95% • Structural Column",
+                text: "Balok teras jati tebal dengan kekuatan struktural tinggi. Contoh dimensi: 300mm x 300mm x 6000mm. Ideal sebagai tiang penyangga utama bernuansa etnik.",
+                defaultDim: "300 x 300 x 6000 mm",
+                defaultQty: "16 Pieces"
+            },
+            "Highland Decking (Lantai Outdoor)": {
+                tag: "Anti-Slip Radius Edge • Mountain-Resistant",
+                text: "Papan lantai kayu luar ruangan tahan cuaca lembab dataran tinggi. Tepi radius aman (E4E). Rekomendasi dimensi: 3000mm x 90mm x 19mm.",
+                defaultDim: "3000 x 90 x 19 mm",
+                defaultQty: "750 Pcs"
+            },
+            "Fine Finish Planks (Papan Belahan)": {
+                tag: "S4S Fine Graded • Precision tollerance",
+                text: "Papan jati halus di semua sisi, minim cacat serat kayu. Contoh dimensi: 2400mm x 120mm x 12mm. Sempurna untuk panel interior & furnitur eksklusif.",
+                defaultDim: "2400 x 120 x 12 mm",
+                defaultQty: "1000 Pcs"
+            },
+            "Scorched Teak (Jati Sakal)": {
+                tag: "Traditional Scorched Finish",
+                text: "Kayu jati dengan pembakaran karbonisasi memberikan tekstur abu-hitam elegan dan proteksi maksimal terhadap hama. Dimensi standar: 2400mm x 120mm x 15mm.",
+                defaultDim: "2400 x 120 x 15 mm",
+                defaultQty: "500 Pcs"
+            },
+            "Bespoke Parahyangan (Kustom)": {
+                tag: "Bespoke Sundanese Craft Millwork",
+                text: "Potongan profil khusus menyesuaikan detail gambar CAD proyek atau struktur bangunan adat Anda. Silakan cantumkan ketebalan & detail profil.",
+                defaultDim: "Sesuai Detail Blueprint Projek",
+                defaultQty: "Custom Lot"
+            }
+        };
+
+        function updateWoodGuide() {
+            const timberVal = document.getElementById('timberType').value;
+            const guide = woodGuides[timberVal];
+            
+            if (guide) {
+                document.getElementById('guideTag').innerText = guide.tag;
+                document.getElementById('guideText').innerText = guide.text;
+                
+                // Pre-fill fields with helpful defaults if empty
+                const dimInput = document.getElementById('woodDimensions');
+                const qtyInput = document.getElementById('woodVolume');
+                dimInput.placeholder = "Anjuran: " + guide.defaultDim;
+                qtyInput.placeholder = "Contoh: " + guide.defaultQty;
+            }
+            updateLivePreview();
+        }
+
+        // Live preview generator
+        function updateLivePreview() {
+            const clientName = document.getElementById('clientName').value || "[Nama Anda / Perusahaan]";
+            const timberType = document.getElementById('timberType').value;
+            const woodDimensions = document.getElementById('woodDimensions').value || "[Belum Diisi]";
+            const woodVolume = document.getElementById('woodVolume').value || "[Belum Diisi]";
+            const destination = document.getElementById('destination').value || "[Pelabuhan / Negara Tujuan]";
+            const woodGrade = document.getElementById('woodGrade').value;
+            const clientNotes = document.getElementById('clientNotes').value || "Tanpa catatan tambahan.";
+
+            const text = `[JATI BANDUNG DIRECT B2B INQUIRY]
+----------------------------------------------
+*Klien/Perusahaan* : ${clientName}
+*Jenis Material*   : ${timberType}
+*Spesifikasi Ukuran*: ${woodDimensions}
+*Estimasi Volume*  : ${woodVolume}
+*Target Destinasi* : ${destination}
+*Kategori Kualitas*: ${woodGrade}
+*Catatan Tambahan* : ${clientNotes}
+----------------------------------------------
+*Status*: Kompilasi Enkripsi Siap Kirim`;
+
+            document.getElementById('formattedPreview').innerText = text;
+        }
+
+        function setupLivePreviewUpdater() {
+            const inputs = ['clientName', 'woodDimensions', 'woodVolume', 'destination', 'clientNotes', 'woodGrade'];
+            inputs.forEach(id => {
+                document.getElementById(id).addEventListener('input', updateLivePreview);
+                document.getElementById(id).addEventListener('change', updateLivePreview);
+            });
+        }
+
+        // Helper to trigger fast spec check from catalog items
+        function prefillWood(type, defaultDim) {
+            const typeSelect = document.getElementById('timberType');
+            typeSelect.value = type;
+            updateWoodGuide();
+            
+            document.getElementById('woodDimensions').value = defaultDim;
+            updateLivePreview();
+            
+            // Smooth scroll to inquiry form
+            document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Private two-way channel routing action
+        let targetChannel = 'whatsapp';
+
+        function submitToChannel(channel) {
+            targetChannel = channel;
+        }
+
+        function generatePrivateMessage(event) {
+            event.preventDefault(); // Stop default reload
+
+            const clientName = document.getElementById('clientName').value;
+            const timberType = document.getElementById('timberType').value;
+            const woodDimensions = document.getElementById('woodDimensions').value;
+            const woodVolume = document.getElementById('woodVolume').value;
+            const destination = document.getElementById('destination').value;
+            const woodGrade = document.getElementById('woodGrade').value;
+            const clientNotes = document.getElementById('clientNotes').value || "Tanpa catatan tambahan.";
+
+            const messageText = `[JATI BANDUNG B2B INQUIRY]
+Sampurasun Jati Bandung (Kiwari Timber), saya tertarik melakukan pemesanan kayu jati kustom premium. Berikut rincian kebutuhan proyek kami:
+
+- Nama Perusahaan: ${clientName}
+- Jenis Material: ${timberType}
+- Dimensi Ukuran: ${woodDimensions}
+- Jumlah/Volume: ${woodVolume}
+- Destinasi Port: ${destination}
+- Kelas Kualitas: ${woodGrade}
+- Keterangan Tambahan: ${clientNotes}
+
+Mohon dapat dihubungi secara privat untuk konsultasi teknis lebih lanjut. Hatur nuhun.`;
+
+            if (targetChannel === 'whatsapp') {
+                const encodedMsg = encodeURIComponent(messageText);
+                const waUrl = `https://wa.me/6281234567890?text=${encodedMsg}`;
+                window.open(waUrl, '_blank');
+            } else if (targetChannel === 'email') {
+                const subject = `B2B Timber Inquiry - ${clientName}`;
+                const mailtoUrl = `mailto:consultation@jatibandung.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(messageText)}`;
+                window.open(mailtoUrl, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
