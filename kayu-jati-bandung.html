@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,14 +77,6 @@
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
-        }
-
-        /* Special override for centered reveal elements (e.g. hero specs capsule) */
-        .reveal.reveal-capsule {
-            transform: translate(-50%, 24px);
-        }
-        .reveal.reveal-capsule.active {
-            transform: translate(-50%, 0);
         }
 
         /* Hover image effects */
@@ -241,20 +233,22 @@
         </div> <!-- End of content container -->
 
         <!-- Absolute Bottom Coordinates / Specs (Responsive dark glassmorphic capsule) -->
-        <div class="absolute bottom-10 left-1/2 z-20 px-6 py-4 md:py-3.5 bg-sundaObsidian/85 backdrop-blur-md border border-sundaKencana/20 rounded-xl md:rounded-full flex flex-col md:flex-row items-center justify-between gap-3 md:gap-10 text-[9px] md:text-[10px] text-sundaAsh tracking-[0.25em] uppercase w-[90%] md:w-auto shadow-2xl reveal reveal-capsule" style="transition-delay: 800ms;">
-            <div class="flex items-center space-x-2.5">
-                <span class="text-sundaKencana font-medium">Origin:</span>
-                <span class="font-light">Priangan, West Java</span>
-            </div>
-            <span class="hidden md:inline text-sundaKencana/30">|</span>
-            <div class="flex items-center space-x-2.5">
-                <span class="text-sundaKencana font-medium">Forestry:</span>
-                <span class="font-light">Perhutani (SVLK Certified)</span>
-            </div>
-            <span class="hidden md:inline text-sundaKencana/30">|</span>
-            <div class="flex items-center space-x-2.5">
-                <span class="text-sundaKencana font-medium">Tolerances:</span>
-                <span class="font-light">± 0.2mm Precision</span>
+        <div class="absolute bottom-10 left-0 w-full flex justify-center px-6 z-20 reveal" style="transition-delay: 800ms;">
+            <div class="bg-sundaObsidian/85 backdrop-blur-md border border-sundaKencana/20 rounded-xl md:rounded-full flex flex-col md:flex-row items-center justify-between gap-3 md:gap-10 text-[9px] md:text-[10px] text-sundaAsh tracking-[0.25em] uppercase w-full md:w-auto px-6 py-4 md:py-3.5 shadow-2xl">
+                <div class="flex items-center space-x-2.5">
+                    <span class="text-sundaKencana font-medium">Origin:</span>
+                    <span class="font-light">Priangan, West Java</span>
+                </div>
+                <span class="hidden md:inline text-sundaKencana/30">|</span>
+                <div class="flex items-center space-x-2.5">
+                    <span class="text-sundaKencana font-medium">Forestry:</span>
+                    <span class="font-light">Perhutani (SVLK Certified)</span>
+                </div>
+                <span class="hidden md:inline text-sundaKencana/30">|</span>
+                <div class="flex items-center space-x-2.5">
+                    <span class="text-sundaKencana font-medium">Tolerances:</span>
+                    <span class="font-light">± 0.2mm Precision</span>
+                </div>
             </div>
         </div>
     </header>
@@ -770,7 +764,7 @@ Harap lengkapi formulir di atas untuk mengompilasi draf pesan inquiry privat...
                         </li>
                         <li>
                             <span class="block text-[10px] uppercase text-zinc-600 tracking-wider">Representative HQ:</span>
-                            <span class="text-zinc-500">Kawasan Industri Lembang, Bandung, Indonesia</span>
+                            <span class="text-zinc-400">Kawasan Industri Lembang, Bandung, Indonesia</span>
                         </li>
                     </ul>
                 </div>
@@ -951,7 +945,7 @@ Harap lengkapi formulir di atas untuk mengompilasi draf pesan inquiry privat...
             },
             "Scorched Teak (Jati Sakal)": {
                 tag: "Traditional Scorched Finish",
-                text: "Kayu jati dengan pembakaran karbonisasi memberikan tekstur abu-hitam elegan dan proteksi maksimal terhadap hama. Dimensi standar: 2400mm x 120mm x 15mm.",
+                text: "Kayu jati dengan pembakaran karbonisasi memberikan tekstur abu-hitam elegan dan proteksi maksimal terhadap rayap. Dimensi standar: 2400mm x 120mm x 15mm.",
                 defaultDim: "2400 x 120 x 15 mm",
                 defaultQty: "500 Pcs"
             },
