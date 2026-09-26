@@ -18,14 +18,14 @@
             theme: {
                 extend: {
                     colors: {
-                        sundaObsidian: '#0B0E0A', // Deep Forest charcoal black
-                        sundaPine: '#1B201A',     // Carbonized bamboo/pine slate green
-                        sundaBorder: '#2A3027',   // Pine border gray-green
-                        sundaAsh: '#F3F5F2',      // Mist / Sage Ash light gray background
-                        sundaText: '#2B3328',     // Deep Pine text color
-                        sundaMuted: '#859A82',    // Sage gray-green muted text
-                        sundaKencana: '#D4A373',  // Royal Sundanese Teak Gold/Copper accent
-                        sundaKencanaDark: '#B88655', // Hover Gold
+                        sundaObsidian: '#F7F5F2', // warm white / ivory base
+                        sundaPine: '#FFFFFF',     // pure white surface
+                        sundaBorder: '#EAE1D8',   // soft warm border
+                        sundaAsh: '#1F1B1A',      // deep charcoal text
+                        sundaText: '#2C2825',     // elegant dark neutral text
+                        sundaMuted: '#726A64',    // muted taupe gray
+                        sundaKencana: '#C8AE8D',  // soft premium warm bronze accent
+                        sundaKencanaDark: '#A98C6B', // darker bronze hover
                     },
                     fontFamily: {
                         sans: ['Outfit', 'sans-serif'],
@@ -43,29 +43,82 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #0B0E0A;
+            background: #F7F5F2;
         }
         ::-webkit-scrollbar-thumb {
-            background: #2A3027;
+            background: #D9CBBB;
             border-radius: 4px;
-            border: 2px solid #0B0E0A;
+            border: 2px solid #F7F5F2;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #D4A373;
+            background: #C8AE8D;
         }
 
         body {
-            background-color: #F3F5F2;
-            color: #2B3328;
+            background-color: #F7F5F2;
+            color: #2C2825;
             font-family: 'Outfit', sans-serif;
+        }
+
+        .bg-sundaObsidian {
+            background-color: #F7F5F2 !important;
+        }
+        .bg-sundaPine {
+            background-color: #FFFFFF !important;
+        }
+        .bg-sundaAsh {
+            background-color: #F7F5F2 !important;
+        }
+        .text-sundaAsh {
+            color: #1F1B1A !important;
+        }
+        .bg-sundaKencana {
+            background-color: #C8AE8D !important;
+        }
+        .text-sundaKencana {
+            color: #C8AE8D !important;
+        }
+        .text-sundaMuted {
+            color: #726A64 !important;
+        }
+        .border-sundaBorder {
+            border-color: #EAE1D8 !important;
+        }
+        .border-sundaKencana\/30 {
+            border-color: rgba(200, 174, 141, 0.3) !important;
+        }
+
+        body, html {
+            background-color: #F7F5F2 !important;
+        }
+
+        header#home {
+            background: linear-gradient(135deg, rgba(255,255,255,0.78), rgba(247,245,242,0.82)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat !important;
+        }
+
+        section#philosophy,
+        section#trust,
+        footer,
+        section#catalog,
+        section#inquiry {
+            background-color: #FFFFFF !important;
+        }
+
+        section#catalog .group,
+        section#catalog .bg-sundaPine,
+        .shadow-xl,
+        .shadow-2xl {
+            background-color: #FFFFFF !important;
+            box-shadow: 0 10px 30px rgba(65, 50, 40, 0.04) !important;
         }
 
         /* Glassmorphism */
         .glass-nav {
-            background-color: rgba(11, 14, 10, 0.85);
+            background-color: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(212, 163, 115, 0.15);
+            border-bottom: 1px solid rgba(200, 174, 141, 0.25);
+            box-shadow: 0 10px 25px rgba(23, 20, 17, 0.04);
         }
 
         /* Scroll reveal effects */
@@ -93,9 +146,10 @@
 
         /* Mobile full screen menu styling */
         #mobile-menu {
-            background-color: rgba(11, 14, 10, 0.98) !important;
+            background-color: rgba(255, 255, 255, 0.96) !important;
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
+            box-shadow: inset 0 0 0 1px rgba(200, 174, 141, 0.25);
         }
         
         /* Subtle Gold Shimmer Animation */
@@ -140,19 +194,19 @@
             <!-- Desktop Menu (Minimal & Clean) -->
             <div class="hidden lg:flex items-center space-x-12 text-xs tracking-[0.2em] uppercase font-light text-sundaMuted">
                 <a href="#home" class="hover:text-sundaKencana transition-colors py-2 relative group">
-                    Home
+                    Beranda
                     <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-sundaKencana transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#philosophy" class="hover:text-sundaKencana transition-colors py-2 relative group">
-                    Philosophy
+                    Filosofi
                     <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-sundaKencana transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#catalog" class="hover:text-sundaKencana transition-colors py-2 relative group">
-                    Collection
+                    Koleksi
                     <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-sundaKencana transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#trust" class="hover:text-sundaKencana transition-colors py-2 relative group">
-                    Global Standards
+                    Standar Global
                     <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-sundaKencana transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </div>
@@ -160,7 +214,7 @@
             <!-- CTA Direct Inquiry Button -->
             <div class="hidden lg:block">
                 <a href="#inquiry" class="px-6 py-2.5 border border-sundaKencana/40 rounded-sm hover:border-sundaKencana hover:bg-sundaKencana hover:text-sundaObsidian text-xs text-sundaKencana tracking-[0.2em] uppercase transition-all duration-500 font-medium">
-                    Private Inquiry
+                    Konsultasi Pribadi
                 </a>
             </div>
 
@@ -178,14 +232,14 @@
                 <!-- Decorative Sundanese character -->
                 <span class="text-4xl text-sundaKencana/20 font-serif">ᮊᮤᮝᮛᮤ</span>
                 
-                <a href="#home" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Home</a>
-                <a href="#philosophy" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Philosophy</a>
-                <a href="#catalog" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Collection</a>
-                <a href="#trust" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Global Standards</a>
+                <a href="#home" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Beranda</a>
+                <a href="#philosophy" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Filosofi</a>
+                <a href="#catalog" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Koleksi</a>
+                <a href="#trust" class="mobile-link text-lg tracking-[0.25em] text-sundaAsh hover:text-sundaKencana transition-colors uppercase font-light">Standar Global</a>
                 
                 <div class="pt-8">
                     <a href="#inquiry" class="mobile-link px-8 py-3.5 border border-sundaKencana/60 text-sundaKencana hover:bg-sundaKencana hover:text-sundaObsidian text-xs tracking-[0.2em] uppercase transition-all rounded-sm font-medium">
-                        Initiate Consultation
+                        Mulai Konsultasi
                     </a>
                 </div>
             </div>
@@ -195,59 +249,59 @@
     <!-- ================= HERO SECTION ================= -->
     <header id="home" class="relative h-screen bg-sundaObsidian flex items-center justify-center overflow-hidden">
         <!-- Sleek Radial Vignette overlay -->
-        <div class="absolute inset-0 bg-gradient-to-b from-sundaObsidian via-transparent to-sundaObsidian/80 z-10"></div>
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_20%,rgba(11,14,10,0.95)_80%)] z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/40 to-[#f7f3ee]/80 z-10"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0)_15%,rgba(247,243,238,0.76)_70%,rgba(247,243,238,0.92)_100%)] z-10"></div>
         
         <!-- Large Background Image (Premium architecture with wood) -->
-        <div class="absolute inset-0 opacity-40 transition-opacity duration-1000 ease-out" id="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center; transform: translate3d(0, 0, 0) scale(1.15); will-change: transform;"></div>
+        <div class="absolute inset-0 opacity-70 transition-opacity duration-1000 ease-out" id="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center; transform: translate3d(0, 0, 0) scale(1.15); will-change: transform;"></div>
         
         <!-- Luxury texture overlay -->
-        <div class="absolute inset-0 opacity-[0.03] z-10 bg-[radial-gradient(rgba(255,255,255,0.15)_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="absolute inset-0 opacity-[0.06] z-10 bg-[radial-gradient(rgba(80,61,46,0.15)_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
         <!-- Content -->
         <div class="relative z-20 text-center px-6 max-w-5xl mx-auto flex flex-col items-center pt-20">
             <!-- Sleek Badge -->
             <div class="flex items-center space-x-3 mb-6 reveal">
                 <span class="w-8 h-[1px] bg-sundaKencana/50"></span>
-                <span class="text-sundaKencana text-xs md:text-sm tracking-[0.4em] uppercase font-light">B2B Sundanese High-Grade Timber Guild</span>
+                <span class="text-sundaKencana text-xs md:text-sm tracking-[0.4em] uppercase font-light">GUILD KAYU JATI PREMIUM</span>
                 <span class="w-8 h-[1px] bg-sundaKencana/50"></span>
             </div>
             
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-sundaAsh leading-[1.2] tracking-[0.1em] font-light mb-8 reveal" style="transition-delay: 200ms;">
-                Priangan Highlands.<br/>
-                <span class="text-sundaKencana">Kiwari Precision.</span>
+                Dataran Tinggi Priangan.<br/>
+                <span class="text-sundaKencana">Ketelitian Kiwari.</span>
             </h1>
             
             <p class="text-sundaMuted text-sm md:text-base lg:text-lg max-w-2xl font-light mb-12 leading-relaxed tracking-wide reveal" style="transition-delay: 400ms;">
-                Premium highland teak from West Java. Harvested sustainably, processed with modern technical tolerances for high-end architecture, luxury resorts, and bespoke global developers.
+                Kayu jati premium dari Jawa Barat yang dipanen secara berkelanjutan dan diproses dengan presisi tinggi untuk arsitektur mewah, resort premium, serta proyek global yang menuntut kualitas terbaik.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-6 reveal" style="transition-delay: 600ms;">
-                <a href="#catalog" class="px-8 py-3.5 bg-sundaKencana text-sundaObsidian text-xs font-semibold tracking-[0.24em] uppercase rounded-sm hover:bg-sundaAsh hover:text-sundaObsidian transition-all duration-500 shadow-md">
-                    Explore Collection
+                <a href="#catalog" class="px-8 py-3.5 bg-sundaKencana text-sundaObsidian text-xs font-semibold tracking-[0.24em] uppercase rounded-sm hover:bg-sundaKencanaDark hover:text-sundaObsidian transition-all duration-500 shadow-md">
+                    Jelajahi Koleksi
                 </a>
-                <a href="#inquiry" class="px-8 py-3.5 border border-sundaAsh/30 text-sundaAsh text-xs font-medium tracking-[0.24em] uppercase rounded-sm hover:bg-sundaAsh/10 hover:border-sundaKencana transition-all duration-500">
-                    B2B Configurator
+                <a href="#inquiry" class="px-8 py-3.5 border border-sundaAsh/30 bg-white/60 text-sundaAsh text-xs font-medium tracking-[0.24em] uppercase rounded-sm hover:bg-white hover:border-sundaKencana transition-all duration-500 backdrop-blur-sm">
+                    Konsultasi B2B
                 </a>
             </div>
         </div> <!-- End of content container -->
 
         <!-- Absolute Bottom Coordinates / Specs (Responsive dark glassmorphic capsule) -->
         <div class="absolute bottom-10 left-0 w-full flex justify-center px-6 z-20 reveal" style="transition-delay: 800ms;">
-            <div class="bg-sundaObsidian/85 backdrop-blur-md border border-sundaKencana/20 rounded-xl md:rounded-full flex flex-col md:flex-row items-center justify-between gap-3 md:gap-10 text-[9px] md:text-[10px] text-sundaAsh tracking-[0.25em] uppercase w-full md:w-auto px-6 py-4 md:py-3.5 shadow-2xl">
+            <div class="bg-white/80 backdrop-blur-md border border-sundaKencana/20 rounded-xl md:rounded-full flex flex-col md:flex-row items-center justify-between gap-3 md:gap-10 text-[9px] md:text-[10px] text-sundaAsh tracking-[0.25em] uppercase w-full md:w-auto px-6 py-4 md:py-3.5 shadow-2xl">
                 <div class="flex items-center space-x-2.5">
-                    <span class="text-sundaKencana font-medium">Origin:</span>
-                    <span class="font-light">Priangan, West Java</span>
+                    <span class="text-sundaKencana font-medium">Asal:</span>
+                    <span class="font-light">Priangan, Jawa Barat</span>
                 </div>
                 <span class="hidden md:inline text-sundaKencana/30">|</span>
                 <div class="flex items-center space-x-2.5">
-                    <span class="text-sundaKencana font-medium">Forestry:</span>
-                    <span class="font-light">Perhutani (SVLK Certified)</span>
+                    <span class="text-sundaKencana font-medium">Kehutanan:</span>
+                    <span class="font-light">Perhutani (SVLK)</span>
                 </div>
                 <span class="hidden md:inline text-sundaKencana/30">|</span>
                 <div class="flex items-center space-x-2.5">
-                    <span class="text-sundaKencana font-medium">Tolerances:</span>
-                    <span class="font-light">± 0.2mm Precision</span>
+                    <span class="text-sundaKencana font-medium">Toleransi:</span>
+                    <span class="font-light">± 0.2mm Presisi</span>
                 </div>
             </div>
         </div>
