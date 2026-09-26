@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kayujatibandung.netlify.app/sitemap.xml
